@@ -8,8 +8,6 @@
 
 	.read {
 	}
-
-
 </style>
 <div class="div_blog panel panel-default">
 	<div class="panel-title">&nbsp;全部博文</div>
@@ -23,6 +21,7 @@
 				{% if user.is_authenticated %}
 				<td>
 					<a href="{{ d.delete }}" style="float:right;">删除</a>
+					<span style="float:right;"><a href="{{ d.edit }}">编辑</a>&nbsp;|&nbsp;</span>
 				</td>
 				{% endif %}
 			</tr>

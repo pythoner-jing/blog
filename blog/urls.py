@@ -25,4 +25,5 @@ urlpatterns = patterns('',
     url(r"^distribute/$", distribute),
     url(r"^read/([^/]+)/$", read),
     url(r"^delete/([^/]+)/$", delete),
+    url(r"^edit/([^/]+)/$", edit),
 )

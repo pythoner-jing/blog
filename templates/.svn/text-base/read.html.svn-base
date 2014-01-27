@@ -13,7 +13,7 @@
 
 </style>
 <div class="panel panel-default" id="distribute">
-	<div class="panel-title">&nbsp;{{ distribute.title }}{% if user.is_authenticated %}<a href="{{ distribute.delete }}" style="float:right;padding-right:5px;"><small>删除</small></a>{% endif %}</div>
+	<div class="panel-title">&nbsp;{{ distribute.title }}{% if user.is_authenticated %}<a href="{{ distribute.delete }}" style="float:right;padding-right:5px;"><small>删除</small></a><span style="float:right"><a href="{{ distribute.edit }}" style="color:#fff;"><small>编辑</small></a>&nbsp;|&nbsp;</span>{% endif %}</div>
 	<div class="panel-body">
 		{% autoescape off %}
 		{{ distribute.content }}

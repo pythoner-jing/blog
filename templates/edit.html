@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+	.btn_insert_code {
+		float : left;
+	}
+
+	.btn_img {
+		float : left;
+	}
+
+	.btn_distribute {
+		float : right;
+	}
+
+	#distribute {
+		background-color : #fff;
+	}
+
+
+	.return {
+		float : right;
+	}
+
+	.div_edit {
+		padding : 5px;
+		background-color : #fff;
+		border-color : #eee;
+	}
+
+	.form_unit {
+		padding : 5px;
+	}
+
+	.btn_edit {
+		float : right;
+	}
+
+	.btn_return {
+		float : right;
+	}
+
+
+</style>
+<div class="col-md-12">
+	<div class="div_read">
+		<div class="panel panel-default" id="distribute">
+			<div class="panel-title">&nbsp;{{ distribute.title }}{% if user.is_authenticated %}<a href="{{ distribute.delete }}" style="float:right;padding-right:5px;"><small>删除</small></a>{% endif %}</div>
+			<div class="panel-body">
+				{% autoescape off %}
+				{{ distribute.content }}
+				{% endautoescape %}
+				<a class="return" href="../../">返回</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="div_edit">
+		<form action="" method="post">
+			{% csrf_token %}
+			<div class="form_unit">
+				{{ form.content }}
+			</div>
+			<div class="form_unit btn_distribute">
+				<button type="submit" class="btn btn-primary" name="submit" value="distribute">发布</button>
+			</div>
+			<div class="form_unit btn_return">
+				<a href="/" class="btn btn-default">返回</a>
+			</div>
+			<div class="form_unit btn_insert_code">
+				<button type="submit" class="btn btn-warning" name="submit" value="code">代码</button>
+			</div>
+			<div class="form_unit btn_img">
+				<button type="submit" class="btn btn-success" name="submit" value="img">图片</button>
+			</div>
+			<div class="form_unit btn_emphasize">
+				<button class="btn btn-danger">强调</button>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

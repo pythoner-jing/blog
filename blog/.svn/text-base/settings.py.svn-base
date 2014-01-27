@@ -12,11 +12,6 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-#MYSQL_HOST = 'w.rdc.sae.sina.com.cn'
-#MYSQL_PORT = '3307'
-#MYSQL_USER = 'z4x0mw0w2k'
-#MYSQL_PASS = 'mlmyhzjhwy14wm3kliw1zmx5j401zw1m3zyy54mj'
-#MYSQL_DB   = 'app_pythonerjing'
 
 if "SERVER_SOFTWARE" in os.environ:
 	from sae.const import (
