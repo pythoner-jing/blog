@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>JING的实验室</title>
+		<link rel="stylesheet" href="/static/css/bootstrap.css" media="all">
+		<script src="/static/js/jquery.js"></script>
+		<script src="/static/js/bootstrap.js"></script>
+		<style>
+			body {
+				overflow-x : hidden;
+				background-color : #f3f7f9;
+			}
+
+			.panel {
+				border-color : #428bca;
+				background-color : #eee;
+			}
+
+			.panel-title {
+				color : #fff;
+				background-color : #428bca;
+			}
+
+			
+			img.img-circle {
+				width : 120px;
+				height : 120px;
+				border-width : 5px;
+				border-color : #ddd;
+				border-style : outset;
+			}	
+
+			pre {
+				background-color : #333333;
+				font-weight: bold; 
+			}
+
+			.highlight .c {
+				color : #80a0ff;
+			}
+
+			.highlight .kn {
+				color : #ff7ab1;
+			}
+
+			.highlight .nn { 
+				color : #ffffff;
+			}
+			
+			.highlight .n { 
+				color : #ffffff;
+			}
+
+			.highlight .k { 
+				color : #ffff5b;
+			}
+
+			.highlight .nb {
+				color : #3dffff;
+			}
+
+			.highlight .p {
+				color : #ffffff;
+			}
+
+			.highlight .s {
+				color : #fda0a0;
+			}
+
+			.highlight .o {
+				color : #ffffff;
+			}
+
+			.highlight .bp {
+				color : #3dffff;
+			}
+
+			.highlight .nf {
+				color : #3dffff;
+			}
+
+			.highlight .mi {
+				color : #fda0a0;
+			}
+
+			.highlight .nc {
+				color : #3dffff;
+			}
+
+			.highlight .ow {
+				color : #ffff5b;
+			}
+
+			.highlight .ne {
+				color : #56ec5f; 
+			}
+
+			.highlight .se {
+				color : #fda0a0; 
+			}
+
+			.highlight .si {
+				color : #fda0a0; 
+			}
+
+			.highlight .mf {
+				color : #fda0a0; 
+			}
+		</style>
+	</head>
+	<body>
+		<!--导航条-->
+		{% include "nav.html" %}
+		{% block msg %}{% endblock %}
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-3">
+				<!--个人介绍-->
+				{% include "intro.html" %}
+				<!--标签-->
+				{% include "tag.html" %}
+			</div>
+			<div class="col-md-7">
+				<!--内容-->
+				{% block content %}{% endblock %}
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+
+		<!--登录退出-->
+		{% include "footer.html" %}
+	</body>
+</html>

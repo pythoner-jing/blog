@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block content %}
+<style>
+	#distribute {
+		background-color : #fff;
+	}
+
+	
+	.return {
+		float : right;
+	}
+
+</style>
+<div class="panel panel-default" id="distribute">
+	<div class="panel-title">&nbsp;{{ distribute.title }}{% if user.is_authenticated %}<a href="{{ distribute.delete }}" style="float:right;padding-right:5px;"><small>删除</small></a>{% endif %}</div>
+	<div class="panel-body">
+		{% autoescape off %}
+		{{ distribute.content }}
+		{% endautoescape %}
+		<a class="return" href="../../">返回</a>
+	</div>
+</div>
+
+{% endblock %}

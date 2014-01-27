@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="alert alert-danger"><p class="text-center">{{msg}}</p></div>
+{% endblock %}

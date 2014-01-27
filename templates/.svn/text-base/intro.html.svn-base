@@ -1,0 +1,23 @@
+<style>
+	#panel_avatar {
+		text-align : center;
+		background-color : #eee;
+		border-color : #ddd;
+		border-width : 1px;
+		padding : 10px;
+	}
+
+	#block_intro {
+		text-align : left;
+	}
+
+</style>
+<div id="panel_avatar" class="panel panel-default">
+	<img id="img_avatar" class="img-circle" src="/static/img/2.png" alt="">
+	<p>
+	<div id="block_intro">
+		<h3>JING</h3>
+		<h4>Python脑残粉，学过Java、C++，做过游戏，IM，爬虫，漫画下载器。现在研究Django快速建站。认为自己不够Geek，目前以高手为目标龟速前进着。</h4>
+	</div>
+</div>
+

@@ -1,0 +1,16 @@
+<style>
+	#footer {
+		text-align : center;
+	}
+</style>
+
+<div id="footer">
+	<br>
+	<br>
+	{% if user.is_authenticated %}
+	<p>懒虫，写点什么吧。<a href="/distribute/">发布博文</a>&nbsp;|&nbsp;<a href="/logout/">退出</a></p>
+	{% else %}
+	<a href="/login/">登录</a>
+	{% endif %}
+	<p class="help-block">2014 By JING</p>
+</div>

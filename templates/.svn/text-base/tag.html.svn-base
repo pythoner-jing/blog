@@ -1,0 +1,25 @@
+<style>
+	#panel_tag {
+		padding : 10px;
+		border-color : #ddd;
+		border-width : 1px;
+		line-height : 25px;
+	}
+</style>
+
+<div id="panel_tag" class="panel panel-default" style="text-align:left">
+	<h4><span class="glyphicon glyphicon-star"></span>&nbsp;标签</h4>
+	<a href="" class="label label-success" style="">标准库</a>
+	<a href="" class="label label-success" style="">爬虫</a>
+	<a href="" class="label label-success" style="">算法</a>
+	<a href="" class="label label-success" style="">Django</a>
+	<a href="" class="label label-success" style="">网络编程</a>
+	<a href="" class="label label-success" style="">函数式编程</a>
+	<a href="" class="label label-success" style="">linux</a>
+	<a href="" class="label label-success" style="">计算机组成原理</a>
+	<a href="" class="label label-success" style="">汇编</a>
+	<a href="" class="label label-success" style="">wxpython</a>
+	<a href="" class="label label-success" style="">Web前端</a>
+	<a href="" class="label label-success" style="">网络协议</a>
+</div>
+

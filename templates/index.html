@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+	.div_blog {
+		background-color : #fff;
+	}
+
+	.read {
+	}
+
+
+</style>
+<div class="div_blog panel panel-default">
+	<div class="panel-title">&nbsp;全部博文</div>
+	<div class="div_content panel-body">
+		<table class="table table-striped">
+			{% for d in distributes %}
+			<tr>
+				<td>
+					<a class="read" href="{{ d.read }}">{{d.title}}</a>
+				</td>
+				{% if user.is_authenticated %}
+				<td>
+					<a href="{{ d.delete }}" style="float:right;">删除</a>
+				</td>
+				{% endif %}
+			</tr>
+			{% endfor %}
+		</table>
+	</div>
+</div>
+{% endblock %}

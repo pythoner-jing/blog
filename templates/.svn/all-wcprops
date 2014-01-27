@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/pythonerjing/!svn/ver/15/1/templates
+END
+distribute.html
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pythonerjing/!svn/ver/30/1/templates/distribute.html
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pythonerjing/!svn/ver/30/1/templates/footer.html
+END
+delete.html
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pythonerjing/!svn/ver/19/1/templates/delete.html
+END
+login_fail.html
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pythonerjing/!svn/ver/19/1/templates/login_fail.html
+END
+demo.html
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pythonerjing/!svn/ver/19/1/templates/demo.html
+END
+nav.html
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/pythonerjing/!svn/ver/19/1/templates/nav.html
+END
+editor.html
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pythonerjing/!svn/ver/19/1/templates/editor.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pythonerjing/!svn/ver/30/1/templates/index.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pythonerjing/!svn/ver/19/1/templates/login.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pythonerjing/!svn/ver/19/1/templates/base.html
+END
+fail.html
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pythonerjing/!svn/ver/19/1/templates/fail.html
+END
+intro.html
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pythonerjing/!svn/ver/30/1/templates/intro.html
+END
+read.html
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pythonerjing/!svn/ver/30/1/templates/read.html
+END
+tag.html
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/pythonerjing/!svn/ver/19/1/templates/tag.html
+END

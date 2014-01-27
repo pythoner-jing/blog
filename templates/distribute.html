@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+	.div_distribute {
+		padding : 5px;
+		background-color : #fff;
+		border-color : #eee;
+	}
+
+	.form_unit {
+		padding : 5px;
+	}
+
+	.btn_distribute {
+		float : right;
+	}
+
+	.btn_return {
+		float : right;
+	}
+
+	.btn_insert_code {
+		float : left;
+	}
+</style>
+<div class="div_distribute panel panel-default col-md-10 col-md-offset-1">
+	<form action="" method="post">
+		{% csrf_token %}
+		<div class="form_unit">
+			{{ form.title }}
+		</div>
+		<div class="form_unit">
+			{{ form.content }}
+		</div>
+		<div class="form_unit btn_distribute">
+			<button type="submit" class="btn btn-primary">发布</a>
+		</div>
+		<div class="form_unit btn_return">
+			<a href="/" class="btn btn-default">返回</a>
+		</div>
+		<div class="form_unit btn_insert_code">
+			<a href="/" class="btn btn-warning">代码</a>
+		</div>
+		<div class="form_unit btn_insert_code">
+			<a href="/" class="btn btn-danger">强调</a>
+		</div>
+	</form>
+</div>
+{% endblock %}

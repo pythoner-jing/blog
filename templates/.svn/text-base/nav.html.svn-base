@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default">
+<div class="navbar-header">
+	<a class="navbar-brand" href="/">JING的实验室</a>
+</div>
+
+<div class="collapse navbar-collapse">
+	<ul class="nav navbar-nav">
+		{% ifequal category "tech" %}
+		<li class="active"><a href="/tech/">技术</a></li>
+		{% else %}
+		<li><a href="/tech/">技术</a></li>
+		{% endifequal %}
+
+		{% ifequal category "proj" %}
+		<li class="active"><a href="/proj/">项目</a></li>
+		{% else %}
+		<li><a href="/proj/">项目</a></li>
+		{% endifequal %}
+
+		{% ifequal category "misc" %}
+		<li class="active"><a href="/misc/">杂记</a></li>
+		{% else %}
+		<li><a href="/misc/">杂记</a></li>
+		{% endifequal %}
+	</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+		<li><a href="http://weibo.com/u/3983823147">微博</a></li>
+		<li><a href="https://github.com/pythoner-jing">GitHub</a></li>
+	</ul>
+</div>
+</nav>
