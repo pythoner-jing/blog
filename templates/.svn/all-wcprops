@@ -3,23 +3,11 @@ svn:wc:ra_dav:version-url
 V 37
 /pythonerjing/!svn/ver/15/1/templates
 END
-delete.html
-K 25
-svn:wc:ra_dav:version-url
-V 49
-/pythonerjing/!svn/ver/19/1/templates/delete.html
-END
-login_fail.html
-K 25
-svn:wc:ra_dav:version-url
-V 53
-/pythonerjing/!svn/ver/19/1/templates/login_fail.html
-END
 index.html
 K 25
 svn:wc:ra_dav:version-url
 V 48
-/pythonerjing/!svn/ver/38/1/templates/index.html
+/pythonerjing/!svn/ver/42/1/templates/index.html
 END
 login.html
 K 25
@@ -37,7 +25,7 @@ tag.html
 K 25
 svn:wc:ra_dav:version-url
 V 46
-/pythonerjing/!svn/ver/19/1/templates/tag.html
+/pythonerjing/!svn/ver/42/1/templates/tag.html
 END
 read.html
 K 25
@@ -51,11 +39,17 @@ svn:wc:ra_dav:version-url
 V 47
 /pythonerjing/!svn/ver/19/1/templates/fail.html
 END
+showtag.html
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pythonerjing/!svn/ver/45/1/templates/showtag.html
+END
 distribute.html
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/pythonerjing/!svn/ver/38/1/templates/distribute.html
+/pythonerjing/!svn/ver/42/1/templates/distribute.html
 END
 nav.html
 K 25
@@ -73,7 +67,7 @@ edit.html
 K 25
 svn:wc:ra_dav:version-url
 V 47
-/pythonerjing/!svn/ver/39/1/templates/edit.html
+/pythonerjing/!svn/ver/42/1/templates/edit.html
 END
 editor.html
 K 25
@@ -85,11 +79,23 @@ intro.html
 K 25
 svn:wc:ra_dav:version-url
 V 48
-/pythonerjing/!svn/ver/30/1/templates/intro.html
+/pythonerjing/!svn/ver/42/1/templates/intro.html
 END
 footer.html
 K 25
 svn:wc:ra_dav:version-url
 V 49
 /pythonerjing/!svn/ver/30/1/templates/footer.html
+END
+delete.html
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pythonerjing/!svn/ver/19/1/templates/delete.html
+END
+login_fail.html
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pythonerjing/!svn/ver/19/1/templates/login_fail.html
 END

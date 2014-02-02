@@ -15,11 +15,10 @@ class FormLogin(ModelForm):
 
 class FormDistribute(ModelForm):
 	title = forms.CharField(max_length = 100, widget = forms.TextInput(attrs = {"class" : "form-control", "placeholder" : "标题"}))
-	content = forms.CharField(max_length = 65536, widget = forms.Textarea(attrs = {"class" : "form-control", "rows" : "15"}))
 
 	class Meta:
 		model = Distribute
-		fields = ["title", "content"]
+		fields = ["title"]
 
 class FormDelete(forms.Form):
 	password = forms.CharField(max_length = 20, widget = forms.PasswordInput(attrs = {"class" : "form-control", "placeholder" : "密码"}))

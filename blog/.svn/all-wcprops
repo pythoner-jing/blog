@@ -3,6 +3,18 @@ svn:wc:ra_dav:version-url
 V 32
 /pythonerjing/!svn/ver/14/1/blog
 END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pythonerjing/!svn/ver/42/1/blog/urls.py
+END
+wsgi.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pythonerjing/!svn/ver/13/1/blog/wsgi.py
+END
 __init__.py
 K 25
 svn:wc:ra_dav:version-url
@@ -13,17 +25,5 @@ settings.py
 K 25
 svn:wc:ra_dav:version-url
 V 44
-/pythonerjing/!svn/ver/38/1/blog/settings.py
-END
-urls.py
-K 25
-svn:wc:ra_dav:version-url
-V 40
-/pythonerjing/!svn/ver/38/1/blog/urls.py
-END
-wsgi.py
-K 25
-svn:wc:ra_dav:version-url
-V 40
-/pythonerjing/!svn/ver/13/1/blog/wsgi.py
+/pythonerjing/!svn/ver/46/1/blog/settings.py
 END

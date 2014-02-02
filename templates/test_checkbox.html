@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="POST"> 
+	{% csrf_token %}
+	<input type="checkbox" value="1" name="check_box_list"/>1
+
+	<input type="checkbox" value="2" name="check_box_list"/>2
+
+	<input type="checkbox" value="3" name="check_box_list"/>3
+
+	<input type="submit" value="提交"/> 
+</form> 
+{% endblock %}

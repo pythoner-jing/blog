@@ -26,4 +26,5 @@ urlpatterns = patterns('',
     url(r"^read/([^/]+)/$", read),
     url(r"^delete/([^/]+)/$", delete),
     url(r"^edit/([^/]+)/$", edit),
+    url(r"^tag/([^/]+)/$", tag),
 )

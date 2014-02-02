@@ -2,45 +2,58 @@
 
 {% block content %}
 <style>
-	.btn_insert_code {
-		float : left;
-	}
-
-	.btn_img {
-		float : left;
-	}
-
-	.btn_distribute {
-		float : right;
-	}
-
-	#distribute {
-		background-color : #fff;
-	}
-
-
-	.return {
-		float : right;
-	}
-
 	.div_edit {
 		padding : 5px;
 		background-color : #fff;
 		border-color : #eee;
 	}
 
+	.div_example {
+		padding : 5px;
+		background-color : #fff;
+		border-color : #eee;
+	}
+
+	#distribute {
+		background-color : #fff;
+	}
+
+	.float {
+		list-style-type:none;
+	}
+
+	.return {
+		float : right;
+	}
+
 	.form_unit {
 		padding : 5px;
 	}
 
-	.btn_edit {
-		float : right;
+	.btn_insert_code {
+		float : left;
+		display : inline;
 	}
 
-	.btn_return {
+	.btn-default {
 		float : right;
+		margin-top : 5px;
+		margin-right : 5px;
+		margin-bottom : 5px;
 	}
 
+	.btn-primary {
+		float : right;
+		margin-top : 5px;
+		margin-right : 5px;
+		margin-bottom : 5px;
+	}
+
+	.btn-warning {
+		margin-top : 5px;
+		margin-left : 5px;
+		margin-bottom : 5px;
+	}
 
 </style>
 <div class="col-md-12">
@@ -56,28 +69,21 @@
 		</div>
 
 	</div>
-	<div class="div_edit">
+	<div class="div_edit panel panel-default">
 		<form action="" method="post">
 			{% csrf_token %}
 			<div class="form_unit">
 				{{ form.content }}
 			</div>
-			<div class="form_unit btn_distribute">
-				<button type="submit" class="btn btn-primary" name="submit" value="distribute">发布</button>
-			</div>
-			<div class="form_unit btn_return">
-				<a href="/" class="btn btn-default">返回</a>
-			</div>
-			<div class="form_unit btn_insert_code">
-				<button type="submit" class="btn btn-warning" name="submit" value="code">代码</button>
-			</div>
-			<div class="form_unit btn_img">
-				<button type="submit" class="btn btn-success" name="submit" value="img">图片</button>
-			</div>
-			<div class="form_unit btn_emphasize">
-				<button class="btn btn-danger">强调</button>
-			</div>
+			<button type="submit" class="btn btn-warning" name="submit" value="code">代码</button>
+			<button type="submit" class="btn btn-primary" name="submit" value="distribute">发布</button>
+			<a href="/" class="btn btn-default">返回</a>
 		</form>
+	</div>
+	<div class="div_example panel panel-default">
+		{% for e in exp %}
+		<p>{{ e }}</p>
+		{% endfor %}
 	</div>
 </div>
 {% endblock %}

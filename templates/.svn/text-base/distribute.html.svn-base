@@ -12,20 +12,13 @@
 		padding : 5px;
 	}
 
+
 	.btn_distribute {
 		float : right;
 	}
 
 	.btn_return {
 		float : right;
-	}
-
-	.btn_insert_code {
-		float : left;
-	}
-
-	.btn_img {
-		float : left;
 	}
 </style>
 <div class="div_distribute panel panel-default col-md-10 col-md-offset-1">
@@ -35,22 +28,15 @@
 			{{ form.title }}
 		</div>
 		<div class="form_unit">
-			{{ form.content }}
+			{% for t in tags %}
+			<input type="checkbox" value="{{ t.name }}" name="tag">&nbsp;{{ t.name }}
+			{% endfor %}
 		</div>
 		<div class="form_unit btn_distribute">
 			<button type="submit" class="btn btn-primary" name="submit" value="distribute">发布</button>
 		</div>
 		<div class="form_unit btn_return">
 			<a href="/" class="btn btn-default">返回</a>
-		</div>
-		<div class="form_unit btn_insert_code">
-			<button type="submit" class="btn btn-warning" name="submit" value="code">代码</button>
-		</div>
-		<div class="form_unit btn_img">
-			<button type="submit" class="btn btn-success" name="submit" value="img">图片</button>
-		</div>
-		<div class="form_unit btn_insert_code">
-			<button class="btn btn-danger">强调</button>
 		</div>
 	</form>
 </div>

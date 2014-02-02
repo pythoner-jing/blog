@@ -17,6 +17,9 @@
 			<tr>
 				<td>
 					<a class="read" href="{{ d.read }}">{{d.title}}</a>
+					{% for t in d.tag %}
+					<span class="label label-success" style="">{{ t }}</span>
+					{% endfor %}
 				</td>
 				{% if user.is_authenticated %}
 				<td>
