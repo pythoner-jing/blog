@@ -21,7 +21,7 @@ else:
 	MYSQL_HOST = "localhost"
 	MYSQL_PORT = "3306"
 	MYSQL_USER = "root"
-	MYSQL_PASS = "britten"
+	MYSQL_PASS = ""
 	MYSQL_DB = "app_pythonerjing"
 
 DATABASES = {
